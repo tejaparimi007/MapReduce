@@ -81,6 +81,16 @@ Follow the below commands:
 
 ![Reducer_Output.PNG](https://github.com/tejaparimi007/MapReduce/blob/master/mapreducerOutput.JPG)
 
+## Graphical Represtation results:
+
+### Total People Injured due to Storm from jan - dec in the year 2016.
+![InjuriesGraph.PNG](https://github.com/tejaparimi007/MapReduce/blob/master/InjuriesGraph.PNG)
+
+### Total Crop damaged due to Storm from jan - dec in the year 2016.
+![CropDamageGraph.PNG](https://github.com/tejaparimi007/MapReduce/blob/master/CropDamageGraph.PNG)
+
+
+
 ## Data References
 
 [https://github.com/tejaparimi007/MapReduce/blob/master/StormEvents_details-ftp_v1.0_d2016_c20170317.csv](https://github.com/tejaparimi007/MapReduce/blob/master/StormEvents_details-ftp_v1.0_d2016_c20170317.csv)
