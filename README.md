@@ -13,7 +13,7 @@ Maryville, MO.
 
 # Contributors
 
-Client
+##Client
 
 - Denise Case, PhD, PE,  Assistant Professor,   Assistant Coordinator, Masters of Applied Computer Science Program, 
   School of Computer Science and Information Systems, 
@@ -23,27 +23,27 @@ Client
   dcase@nwmissouri.edu     
   https://www.linkedin.com/in/denisecase
 
-Faculty
+##Faculty
 
 - Dr.Denise Case
 
-Assistants
+##Assistants
 
 - Sai Sri Ravali Chinthareddy, Course Assistant
 
-Developers, Designers, and Software Engineers
+##Developers, Designers, and Software Engineers
 
 - Nikhil Kumar Vemula 
 - Teja Parimi
 
-# Prerequisites
+## Prerequisites
 
 Following must be installed to run this application_
 1. Cloudera Quick Start running on Virtual Machine
 2. Ecllipse(already included in Cloudera_QuickStart)
 3. Please make sure Whether Cloudera Manager is started successfull in linux operating system.
 
-**Get started**:
+##Get started:
 
 1. Create the workspace or folder where you wanted to clone the repository
 2. Openpen terminal
