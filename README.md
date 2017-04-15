@@ -43,7 +43,7 @@ Following must be installed to run this application_
 2. Ecllipse(already included in Cloudera_QuickStart)
 3. Please make sure Whether Cloudera Manager is started successfull in linux operating system.
 
-##Get started:
+## Get started:
 
 1. Create the workspace or folder where you wanted to clone the repository
 2. Openpen terminal
@@ -80,5 +80,9 @@ Follow the below commands:
 ## Reducer_Output
 
 ![Reducer_Output.PNG](https://github.com/tejaparimi007/MapReduce/blob/master/mapreducerOutput.JPG)
+
+## References
+
+[Data Source:](https://github.com/tejaparimi007/MapReduce/blob/master/StormEvents_details-ftp_v1.0_d2016_c20170317.csv)
 
 
