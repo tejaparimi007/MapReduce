@@ -5,29 +5,27 @@ Nikhil Kumar Vemula
 
 ### 44-564 Design of Data Intensive Systems, Northwest Missouri State University, Maryville, MO.
 
-Client
-Denise Case, PhD, PE, Assistant Professor, Assistant Coordinator, Masters of Applied Computer Science Program, School of Computer Science and Information Systems, Colden Hall 2280, Northwest Missouri State University, 800 University Drive, Maryville, MO 64468, dcase@nwmissouri.edu 
-https://www.linkedin.com/in/denisecase
-Faculty
-Dr.Denise Case
-Assistants
-Sai Sri Ravali Chinthareddy, Course Assistant
-Developers, Designers, and Software Engineers
-Teja Parimi<br>
-Nikhil Kumar Vemula<br>
+**Client**
+_Denise Case, PhD, PE, Assistant Professor, Assistant Coordinator, Masters of Applied Computer Science Program, School of Computer Science and Information Systems, Colden Hall 2280, Northwest Missouri State University, 800 University Drive, Maryville, MO 64468, dcase@nwmissouri.edu_ 
+[GitHub](https://www.linkedin.com/in/denisecase)
 
-Prerequisites
-Following must be installed to run this application:
-Cloudera Quick Start running on Virtual Machine
-Ecllipse(already included in Cloudera_QuickStart)
-Check Whether Cloudera Manager is started successfull in linux operating system.
-Get started:
-Create the workspace or folder where you wanted to clone the repository
-open terminal
-navigate to desired folder
-execute this command :
-git clone https://github.com/tejaparimi007/MapReduce.git <br><br
-Overview:<br>
+# Prerequisites
+_Following must be installed to run this application_
+1. Cloudera Quick Start running on Virtual Machine
+2. Ecllipse(already included in Cloudera_QuickStart)
+3. Please make sure Whether Cloudera Manager is started successfull in linux operating system.
+**Get started**:
+1. Create the workspace or folder where you wanted to clone the repository
+2. open terminal
+3. navigate to desired folder
+4. execute these followint commands :
+''' git clone https://github.com/tejaparimi007/MapReduce.git '''
+   *mvn clean install
+   *hadoop hadoop jar target/mapReduce-1.0-jar-with-dependencies.jar dis.mapReduce.StJob -i /user/cloudera/input_Storm -o /user/cloudera/out0
+ <br><br>
+ 
+ 
+# Overview:
 
 ## Mapper Code
 '''javascript
