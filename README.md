@@ -29,6 +29,7 @@ _Following must be installed to run this application_
 
 ## Mapper Code
 '''javascript
+
 	static class StJobMapper extends
 			Mapper<LongWritable, Text, Text, MapWritable> {
 
