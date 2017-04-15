@@ -265,10 +265,10 @@ _Following must be installed to run this application_
 
 '''
 
-![GitHub Logo](/https://github.com/tejaparimi007/MapReduce/blob/master/mapper_output.JPG)
+![Mapper Output](/https://github.com/tejaparimi007/MapReduce/blob/master/mapper_output.JPG)
 Format: ![Alt Text](https://drive.google.com/file/d/0B5yo9UfWdMr4LWY5ekpuZzZxelU/view?usp=sharing)
 
-![GitHub Logo](https://github.com/tejaparimi007/MapReduce/blob/master/mapreducerOutput.JPG)
-Format: ![Alt Text](https://drive.google.com/file/d/0B5yo9UfWdMr4WHQtWDVDN2M1WlU/view?usp=sharing)
+![Reducer Output](/https://github.com/tejaparimi007/MapReduce/blob/master/mapreducerOutput.JPG)
+
 
 
