@@ -81,7 +81,7 @@ Follow the below commands:
 
 ![Reducer_Output.PNG](https://github.com/tejaparimi007/MapReduce/blob/master/mapreducerOutput.JPG)
 
-## References
+## Data References
 
 [https://github.com/tejaparimi007/MapReduce/blob/master/StormEvents_details-ftp_v1.0_d2016_c20170317.csv](https://github.com/tejaparimi007/MapReduce/blob/master/StormEvents_details-ftp_v1.0_d2016_c20170317.csv)
 
