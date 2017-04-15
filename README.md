@@ -30,13 +30,25 @@ git clone https://github.com/tejaparimi007/MapReduce.git <br><br
 Overview:<br>
 
 ## Mapper Code
-''' 
-	public void map(LongWritable row, Text value, Context context)
+'''javascript
+	static class StJobMapper extends
+			Mapper<LongWritable, Text, Text, MapWritable> {
+
+		static int bym_ind = -1;
+		static int inj_ind = -1;
+		static int ind_inj_ind = -1;
+		static int dth_ind = -1;
+		static int idth_ind = -1;
+		static int prop_ind = -1;
+		static int crop_ind = -1;
+
+		Pattern p = Pattern.compile("\"([^\"]*)\"");
+
+		static boolean check = true;
+
+		public void map(LongWritable row, Text value, Context context)
 				throws IOException, InterruptedException {
-			// BEGIN_YEARMONTH,BEGIN_DAY,BEGIN_TIME,END_YEARMONTH,END_DAY,END_TIME,EPISODE_ID,EVENT_ID,STATE,STATE_FIPS,YEAR,MONTH_NAME,EVENT_TYPE,CZ_TYPE,CZ_FIPS,CZ_NAME,WFO,BEGIN_DATE_TIME,CZ_TIMEZONE,END_DATE_TIME,INJURIES_DIRECT,INJURIES_INDIRECT,DEATHS_DIRECT,DEATHS_INDIRECT,DAMAGE_PROPERTY,DAMAGE_CROPS,SOURCE,MAGNITUDE,MAGNITUDE_TYPE,FLOOD_CAUSE,CATEGORY,TOR_F_SCALE,TOR_LENGTH,TOR_WIDTH,TOR_OTHER_WFO,TOR_OTHER_CZ_STATE,TOR_OTHER_CZ_FIPS,TOR_OTHER_CZ_NAME,BEGIN_RANGE,BEGIN_AZIMUTH,BEGIN_LOCATION,END_RANGE,END_AZIMUTH,END_LOCATION,BEGIN_LAT,BEGIN_LON,END_LAT,END_LON,EPISODE_NARRATIVE,EVENT_NARRATIVE,DATA_SOURCE
-			//
-			// 199507,3,1611,199507,3,1611,,10314233,"ALABAMA",1,1995,"July","Hail","C",73,"JEFFERSON",,"03-JUL-95 16:11:00","CST","03-JUL-95 16:11:00","0","0","0","0","0","0",,".75",,,,,"0","0",,,,,"0",,"Homewood","0",,,,,,,,"*  Pinson,03,1638CST- *,,1645CST,,,?,?,?,?,Hail (1.75) Three-quarters inch hail was reported at Oxmoor Valley Golf Club in Homewood.  One inch hail was reported in the Trace Crossings area of Hoover just south of Interstate 459.  Three to four trees were also reported down in Hoover. Dime to golf ball-size hail was reported in Pinson lasting about seven minutes.","CSV"
-			//
+			
 			String data = value.toString();
 
 			if (data == null || data.trim().isEmpty())
@@ -189,6 +201,7 @@ Overview:<br>
 			return s;
 		}*/
 	}
+	
 '''
 
 ![GitHub Logo](/MapReduce\mapper_output.JPG)
