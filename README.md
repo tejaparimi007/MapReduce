@@ -202,6 +202,69 @@ _Following must be installed to run this application_
 	
 '''
 
+## Reducer Code
+'''javascript
+	static class StJobReducer extends Reducer<Text, MapWritable, Text, Text> {
+
+		static NumberFormat formatter = new DecimalFormat("#0.00"); 
+		public void reduce(Text key, Iterable<MapWritable> values,
+				Context context) throws IOException, InterruptedException {
+
+			Double injuries = 0.0, ind_injuries = 0.0, deaths = 0.0, ind_deaths = 0.0, props = 0.0, crops = 0.0;
+
+			Double tot_injuries = 0.0, tot_deaths = 0.0, tot_props = 0.0, tot_crops = 0.0;
+
+			for (MapWritable mw : values) {
+
+				LOG.info(mw.toString());
+				ImmutableBytesWritable bw = (ImmutableBytesWritable) (mw
+						.get(new ImmutableBytesWritable(INJ_KEY.getBytes())));
+
+				LOG.info(bw.toString());
+
+				injuries = Double.parseDouble(Bytes.toString(bw.get()));
+
+				bw = (ImmutableBytesWritable) (mw
+						.get(new ImmutableBytesWritable(IND_INJ_KEY.getBytes())));
+				ind_injuries = Double.parseDouble(Bytes.toString(bw.get()));
+
+				bw = (ImmutableBytesWritable) (mw
+						.get(new ImmutableBytesWritable(DTH_KEY.getBytes())));
+				deaths = Double.parseDouble(Bytes.toString(bw.get()));
+
+				bw = (ImmutableBytesWritable) (mw
+						.get(new ImmutableBytesWritable(IND_DTH_KEY.getBytes())));
+				ind_deaths = Double.parseDouble(Bytes.toString(bw.get()));
+
+				bw = (ImmutableBytesWritable) (mw
+						.get(new ImmutableBytesWritable(PROP_KEY.getBytes())));
+				props = Double.parseDouble(Bytes.toString(bw.get()));
+
+				bw = (ImmutableBytesWritable) (mw
+						.get(new ImmutableBytesWritable(CROP_KEY.getBytes())));
+				crops = Double.parseDouble(Bytes.toString(bw.get()));
+
+				tot_injuries += (injuries + ind_injuries);
+
+				tot_deaths += (deaths + ind_deaths);
+
+				tot_props += props;
+
+				tot_crops += crops;
+			}
+			
+			
+
+			String output = key.toString() + "," + formatter.format(tot_injuries) + ","
+					+ formatter.format(tot_deaths) + "," + formatter.format(tot_props) + "," + formatter.format(tot_crops);
+
+			context.write(new Text(output), null);
+
+		}
+	}
+
+'''
+
 ![GitHub Logo](/MapReduce\mapper_output.JPG)
 Format: ![Alt Text](https://drive.google.com/file/d/0B5yo9UfWdMr4LWY5ekpuZzZxelU/view?usp=sharing)
 
