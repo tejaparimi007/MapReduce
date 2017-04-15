@@ -48,28 +48,23 @@ Following must be installed to run this application_
 1. Create the workspace or folder where you wanted to clone the repository
 2. open terminal
 3. navigate to desired folder
-4. execute these followint commands :
-''' git clone https://github.com/tejaparimi007/MapReduce.git '''
-   *mvn clean install
-   *hadoop hadoop jar target/mapReduce-1.0-jar-with-dependencies.jar dis.mapReduce.StJob -i /user/cloudera/input_Storm -o /user/cloudera/out0
+4. Ecllipse Editor
+5. Notepad++ (recommended)
+
 
 Following must be installed to run this application:
 
-1. Ecllipse Editor
-2. Notepad++ (recommended)
+1. 
 
 # Get started
 
 Clone this repo to your local machine. 
 
-If Windows, 
-
-- Right-click on C:\44564.
 - git clone https://github.com/tejaparimi007/MapReduce
 
 ## Overview
 
-#Glimpse about our dataset:
+# Glimpse about our dataset:
 
 - We are working on a big data problem which focuses on the “Storm Events”. It includes the data set of the people died due to the storm, economical loss such as crop and etc.
 # Short introduction to our project:
@@ -79,9 +74,6 @@ If Windows,
 
 # Initialize (do these just once when setting up the project)
 
-Clone a copy of repository to your c:\44564 folder.
-
-Open a command window as Administrator in this project folder (e.g. C:\44564\P18).
 
 Follow the below commands:
 
@@ -89,10 +81,11 @@ Follow the below commands:
 > mvn clean install
 > hadoop hadoop jar target/mapReduce-1.0-jar-with-dependencies.jar dis.mapReduce.StJob -i /user/cloudera/input_Storm -o /user/cloudera/out0
 ```
+## Mapper_Output
 
 ![Mapper_Output.PNG](https://github.com/tejaparimi007/MapReduce/blob/master/mapper_output.JPG)
 
-
+## Reducer_Output
 
 ![Reducer_Output.PNG](https://github.com/tejaparimi007/MapReduce/blob/master/mapreducerOutput.JPG)
 
