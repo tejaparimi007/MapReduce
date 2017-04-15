@@ -13,7 +13,7 @@ Maryville, MO.
 
 # Contributors
 
-##Client
+## Client
 
 - Denise Case, PhD, PE,  Assistant Professor,   Assistant Coordinator, Masters of Applied Computer Science Program, 
   School of Computer Science and Information Systems, 
@@ -23,15 +23,15 @@ Maryville, MO.
   dcase@nwmissouri.edu     
   https://www.linkedin.com/in/denisecase
 
-##Faculty
+## Faculty
 
 - Dr.Denise Case
 
-##Assistants
+## Assistants
 
 - Sai Sri Ravali Chinthareddy, Course Assistant
 
-##Developers, Designers, and Software Engineers
+## Developers, Designers, and Software Engineers
 
 - Nikhil Kumar Vemula 
 - Teja Parimi
