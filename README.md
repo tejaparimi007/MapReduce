@@ -52,9 +52,7 @@ Following must be installed to run this application_
 5. Notepad++ (recommended)
 
 
-Following must be installed to run this application:
 
-1. 
 
 # Get started
 
@@ -62,7 +60,6 @@ Clone this repo to your local machine.
 
 - git clone https://github.com/tejaparimi007/MapReduce
 
-## Overview
 
 # Glimpse about our dataset:
 
